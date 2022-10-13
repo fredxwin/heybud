@@ -90,5 +90,5 @@ pnpm start
 
 <div>
    <h2> 🧪 Testing</h2>
-   <p>Using the library <a href="https://jestjs.io/">Jest</a> to conduct component testing however I have ran into issues with correctly setting up path modules. In the future I would like to rectify this and test each components. </p>
+   <p>Using the library <a href="https://jestjs.io/">Jest</a> to conduct component testing however I have ran into issues with correctly setting up path modules in order to run tests. In the future I would like to rectify this and to understand how to configure testing in my project. </p>
 </div>
