@@ -50,7 +50,7 @@ const Content = styled.div`
 
 export const App = () => {
   const { data, loading, error } = useTransactionContext()
-  console.log(data)
+
   return (
     <Container>
       <AppContainer>

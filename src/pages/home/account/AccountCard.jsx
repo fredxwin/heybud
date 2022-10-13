@@ -33,7 +33,7 @@ export const AccountCard = ({ provider, balance }) => {
           <Label type="secondary" isBold>
             Balance
           </Label>
-          <Heading>
+          <Heading data-testid="amount">
             {currencyTypes[balance?.currency_iso]}
             {balance?.amount}
           </Heading>
