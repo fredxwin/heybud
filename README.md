@@ -30,10 +30,12 @@
    <table>
       <tr>
          <th><img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" href="https://nodejs.org/en/" title="NodeJS" alt="NodeJS" width="40" height="40"/></th>
+           <th><img src="https://github.com/devicons/devicon/blob/master/icons/npm/npm-original-wordmark.svg" href="https://nodejs.org/en/" title="npm" alt="npm" width="40" height="40"/></th>
          <th><img href="https://git-scm.com/" src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="Git" alt="Git" width="40" height="40"/></th>
       </tr>
       <tr>
          <td>✔️</td>
+          <td>✔️</td>
          <td>〰️</td>
       </tr>
    </table>
