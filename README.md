@@ -16,7 +16,7 @@
    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
    <img src="https://github.com/devicons/devicon/blob/master/icons/webpack/webpack-original.svg" title="NodeJS" alt="Webpack" width="40" height="40"/>&nbsp;
 </div>
-
+<div><h2>:eyes: <a href="https://singular-vacherin-65ee87.netlify.app/">Demo</a></h2></div>
 <div>
    <br />
    <h4>⛈️ Lighthouse report </h4>
@@ -38,6 +38,25 @@
       </tr>
    </table>
 </div>
+<div id="project">
+   <h1> 📂 Project Structure </h1>
+</div>
+
+```
+heybud/
+├── config                         # webpack configs
+└── src/
+    ├── assets                     # image assets
+    ├── components                 # common components
+    ├── context                    # transaction context accessed globally
+    ├── hooks                      # custom hook
+    └── pages/                     # Split by feature all components located in associated page
+        └── home/
+            ├── account
+            ├── category
+            └── transactions
+```
+
 <div id="Usage">
    <h1>⚡ Usage</h1>
    <p>This will cover how to run the project locally. To begin simply clone or download the repository</p>
@@ -68,3 +87,8 @@ pnpm install
 ```
 pnpm start
 ```
+
+<div>
+   <h2> 🧪 Testing</h2>
+   <p>Using the library <a href="https://jestjs.io/">Jest</a> to conduct component testing however I have ran into issues with correctly setting up path modules. In the future I would like to rectify this and test each components. </p>
+</div>
