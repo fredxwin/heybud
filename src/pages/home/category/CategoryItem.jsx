@@ -27,7 +27,7 @@ const Category = styled(Flexbox)`
 
 export const CategoryItem = ({ categoryType, rank }) => {
   return (
-    <Category tabIndex={0} data-testid="category">
+    <Category tabIndex={0} data-testid={`category-${categoryType.toLowerCase()}`}>
       <FlexRank direction="row" category={categoryType.toLowerCase()}>
         <span>{rank}</span>
         <CategoryIcon categoryType={categoryType} />

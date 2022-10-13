@@ -20,13 +20,22 @@ export const TrendingCategory = ({ transactions }) => {
 
   const sortByOccurance = Object.entries(rankings).sort((current, value) => value[1] - current[1])
   let topCategory = sortByOccurance.slice(0, 3).map((item, idx) => {
-    return <CategoryItem key={item[0]} categoryType={item[0]} rank={rankingTypes[idx]} />
+    return (
+      <CategoryItem
+        data-testid={`category-${item}`}
+        key={item[0]}
+        categoryType={item[0]}
+        rank={rankingTypes[idx]}
+      />
+    )
   })
 
   return (
     <Fragment>
       <Heading margin="18px 0">Trending</Heading>
-      <Flexbox direction="row">{topCategory}</Flexbox>
+      <Flexbox data-testid="trending-categories" direction="row">
+        {topCategory}
+      </Flexbox>
     </Fragment>
   )
 }
