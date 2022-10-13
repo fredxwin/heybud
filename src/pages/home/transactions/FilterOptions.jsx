@@ -24,6 +24,7 @@ export const FilterOptions = ({ action, activeFilter }) => {
       {filterByOptions.map((item, idx) => (
         <Option key={idx}>
           <input
+            data-testid={`checkbox-${item}`}
             key={item}
             id={item}
             type="checkbox"
