@@ -18,13 +18,13 @@ export const TransactionContextWrapper = ({ children }) => {
   const transactionEndpoint = "https://www.mocky.io/v2/5c62e7c33000004a00019b05"
   useEffect(() => {
     const getTransactions = async () => {
-      await fetch(transactionEndpoint)
-        .then((response) => response.json())
-        .then((data) => setData(data))
-        .catch((error) => isError(error))
-        .finally(() => isLoading(false))
+      let response = await fetch(transactionEndpoint)
+      let data = await response.json()
+      setData(data)
     }
     getTransactions()
+      .catch(() => isError(true))
+      .finally(() => isLoading(false))
   }, [])
   return (
     <TransactionContext.Provider value={{ data, loading, error }}>

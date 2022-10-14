@@ -20,13 +20,12 @@ const currencyTypes = {
   USD: "$",
 }
 export const AccountCard = ({ provider, balance }) => {
-  let bankProvider = provider.title.toLowerCase()
   return (
     <>
       <Heading margin="0 0 16px 0">Cards</Heading>
-      <Card data-testid="provider-card" type={bankProvider}>
+      <Card data-testid="provider-card" type={provider.title.toLowerCase()}>
         <Flexbox direction="row" alignItems="center" padding="0 12px 24px 12px">
-          <img alt={bankProvider} width="128px" height="32px" src={monzo} loading="lazy" />
+          <img alt={provider.title} width="128px" height="32px" src={monzo} loading="lazy" />
           <img alt="mastercard" width="64px" height="64px" src={mastercard} loading="lazy" />
         </Flexbox>
         <Flexbox direction="column" padding="12px">
